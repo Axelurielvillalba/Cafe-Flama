@@ -1,0 +1,63 @@
+
+.mouse{
+    width: 100%;
+
+
+
+}
+.Productos{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px 20px;
+    box-shadow: 1px 4px 8px black;
+    display: inline-block;
+    background-color: #454545;
+}
+
+.Nombre{
+    font-size: 40px;
+    border: 10px;
+    border-radius: 10px;
+    color: white;
+
+}
+.precio-anterior{
+    text-decoration: line-through;
+    color: #9b9a9a;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+.precio-actual{
+    color: white;
+    border: 1px;
+    font-size: 40px;
+    margin: 5px 0;
+    display: inline;
+}
+.descuentos, .cuotas, .tipo-de-envio{
+    color: rgb(0, 251, 21);
+}
+.descuentos{
+    display: block;
+}
+.tipo-de-envio{
+    font-weight: bold;
+}
+
+input{
+    width: 80%;
+    height: 40px;
+    transition: all 1s;
+    
+}
+input:hover{
+    color: white;
+    background-color: #FF8000;
+    transform: scale(1.3) translateX(27px);
+    border: none;
+    border-radius: 10px;
+
+    
+}
