@@ -209,7 +209,7 @@ body, html {
     margin: 5px 0;
     display: inline;
 }
-.descuentos, .cuotas, .tipo-de-envio{
+.descuentos, .tipo-de-envio{
     color: #FF8000;
 }
 .descuentos{
