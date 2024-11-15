@@ -1,6 +1,6 @@
 /*----------FUENTES-----------*/
 @font-face {
-    font-family: OpenSans; /* Elige un nombre para la fuente */
+    font-family: OpenSans; 
     src: url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf)
 }
 @font-face{
@@ -96,6 +96,7 @@ body, html {
 .hero-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    font-family: Poppins;
 }
 
 .hero-content .btn-hero {
@@ -107,6 +108,7 @@ body, html {
     font-size: 1em;
     cursor: pointer;
     transition: all 1s;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-content button:hover {
@@ -149,9 +151,27 @@ body, html {
     cursor: pointer;
     color: white;
 }
+
+.btn-productos{
+    width: 80%;
+    height: 40px;
+    transition: all 1s;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn-productos:hover{
+    color: white;
+    background-color: #FF8000;
+    transform: scale(1.3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
 .subtitulo{
+    font-size: 302333px;
     line-height: 81px;
-    letter-spacing: 6px;
+    letter-spacing: px;
     font-family: 'Times New Roman', Times, serif;
     transform: skew(-20deg);
 }
@@ -188,7 +208,6 @@ body, html {
 .Productos:hover{
     transform: scale(1.05);
 }
-
 .Nombre{
     font-size: 40px;
     border: 10px;
@@ -219,14 +238,13 @@ body, html {
     font-weight: bold;
 }
 
-input{
+.Contacto input{
     width: 80%;
     height: 40px;
     transition: all 1s;
     font-size: 25px;
-    
 }
-input:hover{
+.Contacto input:hover{
     color: white;
     background-color: #FF8000;
     transform: scale(1.3);
@@ -248,7 +266,7 @@ input:hover{
     letter-spacing: 6px;
     color: #333;
     font-family: 'Times New Roman', Times, serif;
-    transform: skew(-20deg) translateY(20px);
+    transform: skew(-20deg) ;
     text-align: center;
     font-size: 60px;
     font-weight: bold;
@@ -281,38 +299,38 @@ input:hover{
 
 
 /*----------------- FOOTER------------------ */
-.footer {
+.Contactanos {
     background-color: #14191E;
     font-family: Poppins;
     color: #ccc;
     text-align: center;
     padding: 20px;
 }
-.footer .contact-info,
-.footer .form-section,
-.footer .payment-options {
+.Contactanos .contact-info,
+.Contactanos .form-section,
+.Contactanos .payment-options {
     display: inline-block;
     vertical-align: bottom;
     margin: 10px;
 }
-.footer .contact-info {
+.Contactanos .contact-info {
     width: 25%;
 }
-.footer .contact-info h2 {
+.Contactanos .contact-info h2 {
     font-size: 32px;
     color: #fff;
 }
-.footer .contact-info p{
+.Contactanos .contact-info p{
     font-size: 20px;
 }
-.footer .contact-info img{
+.Contactanos .contact-info img{
     width: 100px;
 }
-.footer .form-section {
+.Contactanos .form-section {
     width: 40%;
 }
-.footer .form-section input[type="text"],
-.footer .form-section input[type="email"] {
+.Contactanos .form-section input[type="text"],
+.Contactanos .form-section input[type="email"] {
     padding: 10px;
     margin: 5px 0;
     width: 85%;
@@ -325,8 +343,7 @@ input:hover{
     color: #ffffff;
     font-family: Poppins;
 }
-.footer .form-section .submit-btn {
-    font-family: Poppins;
+.Contactanos .form-section .submit-btn {
     padding: 10px 20px;
     margin-top: 20px;
     background-color: #FF8000;
@@ -335,6 +352,7 @@ input:hover{
     border-radius: 5px;
     cursor: pointer;
     transition: all 1s;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .submit-btn:hover{
@@ -343,24 +361,206 @@ input:hover{
     transform: scale(1.5) translateY(5px);
     border: none;
     border-radius: 10px;
+
 }
-.footer .payment-options {
+.Contactanos .payment-options {
     width: 25%;
 }
-.footer .payment-options img {
+.Contactanos .payment-options img {
     width: 200px;
     margin: 0 5px;
 }
-.footer .rights {
+.Contactanos .rights {
     margin-top: 20px;
     font-size: 12px;
     color: #555;
 }
 
-.pies{
-width: 100px;
-height: 100px;
-background-color: #a14702;
+.pie{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 61px;
+    background-color: rgba(20, 25, 30, 0.97);
+    text-align: center;
+}
+
+.textopie{
+    color: rgba(255, 255, 255, 0.702);
+}
+
+/* Hacer que el sitio sea responsivo */
+@media (max-width: 768px) {
+    /* Ajustes de la barra de navegación */
+    .navbar {
+        background-color: #B8B09B;
+        align-items: center;
+        position:static;
+        padding: 0 0;
+
+
+    }
+
+    .navbar .logo {
+        width: 120px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        margin: 0;
+        background-color: #1E252E;
+        border-radius: 9px;
+    }
+    .nav-links a:hover {
+        transform: scale(1.0) ;
+        color: white;
+    }
+
+    /* Ajustes de la sección hero */
+    .hero-content {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px 20px 50px 30px;
+        border-radius: 10px;
+        height: 300px;
+        text-align: center;
+        
+    }
+
+    .hero-content h1 {
+        font-size: 70px;
+    }
+
+    .hero-content p {
+        font-size: 30px;
+    }
+
+    .hero-content .btn-hero {
+        font-size: 1.3em;
+        padding: 8px 15px;
+        background-color: #FF8000;
+        width: 150px;
+        height: 50px;
+        
+
+    }
+    .hero-content .btn-hero:hover {
+        transform: scale(1.0) ;
+        background-color: #FF8000;
+    }
+    /* Sección de productos */
+    .productos {
+        padding: 20px 10px;
+    }
+    .productos h2 {
+        font-size: 43px;
+    }
+
+    .Productos {
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .Nombre {
+        font-size: 24px;
+    }
+
+    .precio-anterior {
+        font-size: 20px;
+    }
+
+    .precio-actual {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 18px;
+        height: 35px;
+    }
+
+    /* Sección Sobre Nosotros */
+    .section-title{
+        font-size: 60px;
+        transform: skew(-10deg) ;
+    }
+
+    .about-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+
+    .text-side {
+        font-size: 23px;
+    }
+
+    /* Sección de contacto */
+    .Contacto input:hover{
+        transform: scale(1.0);
+    }
+
+    .Contactanos {
+        padding: 20px;
+    }
+
+    .Contactanos .contact-info,
+    .Contactanos .form-section,
+    .Contactanos .payment-options {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .Contactanos .contact-info h2,
+    .Contactanos .form-section h2 {
+        font-size: 24px;
+    }
+
+    .Contactanos .form-section input[type="text"],
+    .Contactanos .form-section input[type="email"] {
+        width: 90%;
+    }
+
+    .Contactanos .payment-options img {
+        width: 150px;
+    }
+    .submit-btn{
+    font-size: 25px;
+    }
+
+    .submit-btn:hover{
+        color: white;
+        background-color: #FF8000;
+        transform: scale(1.0) translateY(0px);
+        border: none;
+        border-radius: 10px;
+    }
+
+
+    /* Ajustes del pie de página */
+    .pie {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .textopie {
+        font-size: 14px;
+    }
 }
 
 
