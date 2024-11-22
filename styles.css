@@ -1,10 +1,10 @@
 :root{
-    --cp:white;/*-----color primario-----*/
-    --cpr:#14191E;/*-----caja de productos y footer-----*/
-    --ctp:#333;/*-----titulos, parrafos-----*/
-    --cb:#FF8000;/*-----botones-----*/
-    --tt:'Times New Roman', Times, serif;/*-----fuente de titulos-----*/
-    --ts:Poppins, sans-serif;/*-----fuente secundaria-----*/
+    --cp:white;        /*-----color primario-----*/
+    --cpr:#14191E;      /*-----caja de productos y footer-----*/
+    --ctp:#333;    /*-----titulos, parrafos-----*/
+    --cb:#FF8000;   /*-----botones-----*/
+    --tt:'Times New Roman', Times, serif;   /*-----fuente de titulos-----*/
+    --ts:Poppins, sans-serif;     /*-----fuente secundaria-----*/
 }
 /*------------------------FUENTES------------------------------------*/
 @font-face {
