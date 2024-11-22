@@ -579,4 +579,69 @@ body, html {
         font-size: 14px;
     }
 }
+
+/*------------ADAPTACIÓN PARA NETBOOKS--------------------------*/
+@media (max-width: 1366px) {
+    .navbar {
+        height: 70px;
+    }
+    
+    .nav-links a {
+        font-size: 20px;
+    }
+    .navbar .logo {
+        width: 65px;
+        
+    }
+    .hero-content h1 {
+        font-size: 55px;
+    }
+    
+    .productos .imagenes {
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-item img {
+        max-width: 100%;
+        height: auto;
+    }
+    .Contactanos{
+        padding-top: 7.5px;
+        margin: 0;
+        font-size: 14px;
+    }
+    .Contacto input{
+        font-size: 18px;
+        height: 20px;
+    }
+    .form-section form input {
+        width: 90%;
+        margin: 5px 0;
+    }
+    
+    .form-section form button {
+        width: 50%;
+    }
+    
+    .contact-info img,
+    .payment-options img {
+        max-width: 80%;
+    }
+    .Contacto input:hover{
+        transform: scale(1.15);
+    }
+    .submit-btn:hover{
+        transform: scale(1.15)translateY(3px);
+    }
+    .textopie{
+        font-size: 15px;
+    }
+}
+
 /*si ves esto manda un "hola chavales" al grupo*/
