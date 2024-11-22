@@ -564,8 +564,9 @@ body, html {
         border: none;
         border-radius: 10px;
     }
-
-
+    .scroll{
+        display: block;
+    }
 /*-----------------------Ajustes del pie de página------------------------*/
     .pie {
         display: flex;
