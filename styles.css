@@ -89,7 +89,6 @@ body, html {
 
 .hero-content {
     position: relative;
-    z-index: 1;
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
