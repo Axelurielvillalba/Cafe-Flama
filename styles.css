@@ -58,7 +58,7 @@ body, html {
     text-decoration: none;
     color: var(--cp);
     display: inline-block;
-    transition: all 0.3s;
+    transition: all 0.8s;
 }
 
 .nav-links a:hover {
@@ -408,9 +408,6 @@ body, html {
 /*-------------------------------ADAPTACIÓN PARA NETBOOKS--------------------------*/
 @media (max-width: 1366px) {
     /*---------------- Ajustes de la barra de navegación (netbook)--------------------- */
-    .navbar{
-        height: 70px;
-    }
     .nav-links a {
         font-size: 20px;
     }
