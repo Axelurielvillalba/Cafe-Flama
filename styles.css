@@ -409,7 +409,7 @@ body, html {
 @media (max-width: 1366px) {
     /*---------------- Ajustes de la barra de navegación (netbook)--------------------- */
     .navbar{
-        height: 70px;
+        height: 69px;
     }
     .nav-links a {
         font-size: 20px;
