@@ -383,7 +383,7 @@ body, html {
 .scroll{
     display: none;
     position: fixed;
-    bottom: 10%;
+    bottom: 6%;
     right: 20px;
 }
 
@@ -405,10 +405,11 @@ body, html {
     color: rgba(255, 255, 255, 0.702);
 }
 
-/*------------ADAPTACIÓN PARA PANTALLAS MOVILES--------------------------*/
+/*---------------------------------ADAPTACIÓN PARA PANTALLAS MOVILES--------------------------*/
 @media (max-width: 768px) {
-    /*---------------- Ajustes de la barra de navegación--------------------- */
+    /*---------------- Ajustes de la barra de navegación (moviles)--------------------- */
     .navbar {
+        height: 180px;
         background-color: #B8B09B;
         align-items: center;
         position:static;
@@ -418,7 +419,6 @@ body, html {
     }
 
     .navbar .logo {
-        width: 120px;
         margin-bottom: 10px;
         margin-left: 10px;
     }
@@ -441,29 +441,29 @@ body, html {
         color: var(--cp);
     }
 
-    /*---------------------Ajustes de la sección hero---------------------------*/
+    /*---------------------Ajustes de la sección hero (moviles)---------------------------*/
     .hero-content {
         background: rgba(0, 0, 0, 0.5);
         padding: 20px 20px 50px 30px;
         border-radius: 10px;
-        height: 300px;
+        height: 260px;
         text-align: center;
         
     }
 
     .hero-content h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .hero-content p {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .hero-content .btn-hero {
-        font-size: 1.3em;
+        font-size: 20px;
         padding: 8px 15px;
         background-color: var(--cb);
-        width: 150px;
+        width: 170px;
         height: 50px;
         
 
@@ -472,7 +472,7 @@ body, html {
         transform: scale(1.0) ;
         background-color: var(--cb);
     }
-    /*----------------------Sección de productos----------------------------*/
+    /*----------------------Sección de productos (moviles)----------------------------*/
     .productos {
         padding: 20px 10px;
     }
@@ -502,7 +502,7 @@ body, html {
         height: 35px;
     }
 
-    /*-----------------Sección Sobre Nosotros-------------------*/
+    /*-----------------Sección Sobre Nosotros (moviles)-------------------*/
     .section-title{
         font-size: 60px;
         transform: skew(-10deg) ;
@@ -523,7 +523,7 @@ body, html {
         font-size: 23px;
     }
 
-    /*--------------------------Sección de contacto--------------------*/
+    /*--------------------------Sección de contacto (moviles)--------------------*/
     .Contacto input:hover{
         transform: scale(1.0);
     }
@@ -567,7 +567,7 @@ body, html {
     .scroll{
         display: block;
     }
-/*-----------------------Ajustes del pie de página------------------------*/
+/*-----------------------Ajustes del pie de página (moviles)------------------------*/
     .pie {
         display: flex;
         text-align: center;
@@ -580,28 +580,26 @@ body, html {
     }
 }
 
-/*------------ADAPTACIÓN PARA NETBOOKS--------------------------*/
+/*-------------------------------ADAPTACIÓN PARA NETBOOKS--------------------------*/
 @media (max-width: 1366px) {
-    .navbar {
-        height: 70px;
-    }
-    
+    /*---------------- Ajustes de la barra de navegación (netbook)--------------------- */
     .nav-links a {
         font-size: 20px;
     }
     .navbar .logo {
-        width: 65px;
+        width: 70px;
         
     }
+    /*---------------------Ajustes de la sección hero (netbook)---------------------------*/
     .hero-content h1 {
         font-size: 55px;
     }
-    
+    /*----------------------Sección de productos (netbook)----------------------------*/
     .productos .imagenes {
         width: 100%;
         height: auto;
     }
-    
+    /*-----------------Sección Sobre Nosotros (netbook)-------------------*/
     .about-item {
         flex-direction: column;
         text-align: center;
@@ -611,6 +609,7 @@ body, html {
         max-width: 100%;
         height: auto;
     }
+    /*--------------------------Sección de contacto (netbook)--------------------*/
     .Contactanos{
         padding-top: 7.5px;
         margin: 0;
@@ -639,9 +638,9 @@ body, html {
     .submit-btn:hover{
         transform: scale(1.15)translateY(3px);
     }
+    /*-----------------------Ajustes del pie de página (netbook)------------------------*/
     .textopie{
         font-size: 15px;
     }
 }
-
 /*si ves esto manda un "hola chavales" al grupo*/
