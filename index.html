@@ -8,16 +8,30 @@
     <link rel="shortcut icon" href="imagenes/cafelogonav.jpg" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#Inicio" class="logo-link">
-            <img src="imagenes/cafelogonav.jpg" alt="Logo Café Flama" class="logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="#Inicio">Inicio</a></li>
-            <li><a href="#Productos">Productos</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="conteiner-nav">
+            <div class="logo-container">
+                <a href="#Inicio" class="logo-link">
+                    <img src="imagenes/cafelogonav.jpg" alt="Logo Café Flama" class="logo">
+                </a>
+            </div>
+            <div class="menu-conteiner" id="hambur">
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <img src="imagenes/cafelogonav.jpg" alt="Logo Café Flama" class="logo-nav">
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Productos">Productos</a></li>
+                        <li><a href="#Contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bar-menu" id="menu-celu">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </div>
+        </header>
 <!--comienzo del main-->
 <main>
     <!-- Hero con video de fondo -->
@@ -193,5 +207,9 @@
             <p class="textopie">Derechos Reservados ©2024 Café Flama - <br>Desarrolladores: Axel y Alexis.</p>
     </div>
 </footer>
+
+
+
+<script src="script.js"></script>
 </body>
 </html>

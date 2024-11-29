@@ -17,6 +17,10 @@
 }
 
 /*----------------Estilos del cuerpo y menú de navegación--------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -24,29 +28,44 @@ body, html {
     overflow-x: hidden;
 }
 
-.navbar {
+.conteiner-nav{
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     padding: 5px 20px;
     background-color: rgba(0, 0, 0, 0.7);
     color: var(--cp);
-    z-index: 10;
+    
 }
 
-.navbar .logo {
+.logo-container .logo {
     width: 80px;
     border-radius: 50%;
     
 }
 
+.menu-conteiner{
+    margin-left: auto;
+}
+
+
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    
+}
+
+.nav-links .logo-nav{
+    display: none;
+    width: 80px;
+    border-radius: 50%;
+    transform: translateX(60px);
 }
 
 .nav-links a {
@@ -65,6 +84,39 @@ body, html {
     transform: scale(1.8) ;
     color: #a14702;
 }
+.bar-menu{
+    display: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.bar-menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #555;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+
+}
+
+.activeline1{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3{
+    transform: rotate(-45deg) translate(-4px, 2px);
+
+}
+
 /*-----------------------Estilos de la sección hero con video-----------------*/
 .hero {
     position: relative;
@@ -418,6 +470,7 @@ body, html {
         width: 70px;
         
     }
+    
     /*---------------------Ajustes de la sección hero (netbook)---------------------------*/
     .hero-content h1 {
         font-size: 55px;
@@ -475,19 +528,49 @@ body, html {
 /*---------------------------------ADAPTACIÓN PARA PANTALLAS MOVILES--------------------------*/
 @media (max-width: 768px) {
     /*---------------- Ajustes de la barra de navegación (moviles)--------------------- */
-    .navbar {
-        height: 180px;
+    .conteiner-nav {
+        height: 70px;
         background-color: #B8B09B;
         align-items: center;
-        position:static;
-        padding: 0 0;
-
-
+        padding: 0 ;
+        position: static;
     }
 
-    .navbar .logo {
-        margin-bottom: 10px;
-        margin-left: 10px;
+    #menu-celu {
+        display: block;
+    }
+
+    #hambur {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: #b8b09b98;
+        transition: transform 0.3s ease-in-out;  /* Transición de apertura/cierre */
+        transform: translateX(-100%);  /* El menú comienza oculto */
+    }
+
+    #hambur.active {
+        transform: translateX(0);  /* Mueve el menú a la vista cuando tiene la clase "active" */
+    }
+
+    /* Cuando el menú tiene la clase "active", los enlaces se hacen visibles */
+    #hambur.active .nav-links {
+        opacity: 1;  /* Los enlaces se vuelven visibles */
+        transform: translateY(0); /* Los enlaces se mueven a su posición original */
+    }
+    .logo-container{
+        transform: translateY(2px);
+    }
+    .logo-container .logo {
+        margin-top: 13px;
+        margin: 10px;
+        width: 65px;
+    }
+    .nav-links .logo-nav{
+        display: block;
     }
 
     .nav-links {
@@ -495,18 +578,34 @@ body, html {
         gap: 10px;
         margin-right: 0;
         margin: 0;
+        margin-top: 40px;
+        margin-left: -20px;
+        transform: translateY(-20px); /* Los enlaces comienzan ligeramente hacia arriba */
+        transition: all 2s ease-in;  /* Transición más rápida para los enlaces */
+    }
+
+    .nav-links li {
+        margin-right: 50px;
+
     }
 
     .nav-links a {
         font-size: 18px;
         margin: 0;
         background-color: #1E252E;
-        border-radius: 9px;
+        border-radius: 10px;
+        transition: all 0.3s ease; /* Transición más rápida para el hover */
+        padding-left: 10px; /* Corrige el padding-left negativo */
+        width: 100%;
     }
+
     .nav-links a:hover {
-        transform: scale(1.0) ;
+        transform: scale(1.05);  /* Sutil aumento al pasar el mouse */
         color: var(--cp);
     }
+
+
+    
 
     /*---------------------Ajustes de la sección hero (moviles)---------------------------*/
     .hero-content {
