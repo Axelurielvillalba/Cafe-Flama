@@ -547,7 +547,7 @@ body, html {
         left: 0;
         width: 250px;
         height: 100vh;
-        background-color: #b8b09b98;
+        background-color: #b8b09ba6;
         transition: transform 0.3s ease-in-out;  /* Transición de apertura/cierre */
         transform: translateX(-100%);  /* El menú comienza oculto */
     }
