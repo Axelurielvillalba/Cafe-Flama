@@ -184,10 +184,11 @@
         
         <div class="form-section">
             <h2>Dejanos tus datos para contactarte</h2>
-            <form class="Contacto">
-                <input type="text" placeholder="Nombre y apellido"><br>
-                <input type="email" placeholder="Correo"><br>
-                <input type="text" placeholder="Número de teléfono"><br>
+            <form action="https://formspree.io/f/xanypggr"
+            method="POST" class="Contacto">
+                <input type="text" name="nombre" placeholder="Nombre y apellido"><br>
+                <input type="email" name="email" placeholder="Correo"><br>
+                <input type="text" name="num" placeholder="Número de teléfono"><br>
                 <button type="submit" class="submit-btn">Enviar</button>
                 <a href="#Inicio" class="scroll">
                     <img class="flecha" src="imagenes/flecha.jfif" alt="flecha">
